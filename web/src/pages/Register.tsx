@@ -1,9 +1,7 @@
-import React from "react";
+import React from 'react';
 
 interface Props {
 
 }
 
-export const Register: React.FC<Props> = () => {
-    return (<div>register page</div>)
-}
+export const Register: React.FC<Props> = () => (<div>register page</div>);

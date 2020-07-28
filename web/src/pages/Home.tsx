@@ -1,9 +1,7 @@
-import React from "react";
+import React from 'react';
 
 interface Props {
 
 }
 
-export const Home: React.FC<Props> = () => {
-    return (<div>index</div>)
-}
+export const Home: React.FC<Props> = () => (<div>home page</div>);
