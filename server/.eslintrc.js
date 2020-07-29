@@ -15,6 +15,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'max-classes-per-file': 'off',
     'class-methods-use-this': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
   },
   settings: {
     'import/resolver': {
