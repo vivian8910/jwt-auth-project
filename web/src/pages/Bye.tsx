@@ -1,9 +1,7 @@
 import React from 'react';
 import { useByeQuery } from '../generated/graphql';
 
-interface Props {}
-
-export const Bye: React.FC<Props> = () => {
+export const Bye: React.FC = () => {
   const { data, loading, error } = useByeQuery({
     fetchPolicy: 'network-only',
   });

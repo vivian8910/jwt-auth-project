@@ -5,6 +5,7 @@ import { Register } from './pages/Register';
 import { Login } from './pages/Login';
 import { Bye } from './pages/Bye';
 import { setAccessToken } from './accessToken';
+import { Header } from './Header';
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState(true);
@@ -27,20 +28,7 @@ const App: React.FC = () => {
   return (
     <BrowserRouter>
       <div>
-        <header>
-          <div>
-            <Link to="/">home</Link>
-          </div>
-          <div>
-            <Link to="/register">register</Link>
-          </div>
-          <div>
-            <Link to="/login">login</Link>
-          </div>
-          <div>
-            <Link to="/bye">bye</Link>
-          </div>
-        </header>
+        <Header />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/register" component={Register} />
